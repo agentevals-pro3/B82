@@ -10,8 +10,8 @@
     typeToSearchText=""
     [typeahead]="couponCodeInput$"
     [formControl]="control"
-    (add)="addCouponCode.emit($event.code)"
-    (remove)="removeCouponCode.emit($event.value?.code)"
+    (add)="addCouponCode.emit($event.value)"
+    (remove)="removeCouponCode.emit($event.value)"
 >
     <ng-template ng-option-tmp let-item="item">
         <div class="flex items-center">
